@@ -21,4 +21,9 @@
     - Set up basic server config and npm dependencies
     - set up connection to database via database.ts
     - initial run of server successful~
+    - initial setup of CRUD methods success~ (employee.routes.ts)
+    - initial setup of client in progress~
     
+    Useful commands: 
+        > git-dev/mean-test/client$ ng serve -o
+        > git-dev/mean-test/server$ npx ts-node src/server.ts
