@@ -27,3 +27,18 @@
     Useful commands: 
         > git-dev/mean-test/client$ ng serve -o
         > git-dev/mean-test/server$ npx ts-node src/server.ts
+
+2/26/23
+    - Creating an employee service (Angular.js)
+        > ng generate interface employee
+        > ng generate service employee 
+        > ng generate component employees-list
+        >> app/employee.service.ts, app/employee.ts, app/employees-list/employees-list.component.ts 
+        >> app/app-routing.module.ts, app/app.component.ts, app/app.module.ts, src/index.html
+    - Creating a page for adding employees
+        > ng generate component employee-form -m app
+        > import ReactiveFormsModule -> app.module.ts
+        > ng generate component add-employee -m app
+        > ng generate component edit-employee -m app
+        XX Error -- cannot POST to http://localhost:5200/employees (404 not found)
+            >> fixed - forgot employee.post in employee.routes.ts 
